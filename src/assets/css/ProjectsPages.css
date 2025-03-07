@@ -1,0 +1,100 @@
+/* Fondo para toda la sección de proyectos */
+.projects-page {
+    background: #f8f9fa; /* Fondo sólido */
+    /* Alternativa con gradiente */
+    /* background: linear-gradient(to bottom, #e3f2fd, #f8f9fa); */
+    padding: 80px 0;
+}
+
+/* Contenedor principal */
+.projects-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo del título */
+.projects-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+}
+
+/* Línea decorativa debajo del título */
+.projects-container h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Contenedor de las cards */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Estilo de cada card */
+.project-card {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen de la card */
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Título del proyecto */
+.project-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+/* Descripción */
+.project-card p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Botón de enlace */
+.project-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-button:hover {
+    background: #0056b3;
+}
+
+  

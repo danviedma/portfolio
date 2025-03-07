@@ -1,0 +1,81 @@
+.navbar {
+    position: fixed;
+    background-color: #000;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar img {
+    width: 200px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Estilos del menú hamburguesa */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-items {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .nav-items.open {
+        height: 200px; /* Ajustado para que sea más compacto */
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-items ul li {
+        margin: 0px 0; /* Menos espacio entre los elementos */
+    }
+
+    .nav-items ul li a {
+        padding: 8px 0; /* Reduce la altura de cada enlace */
+        font-size: 1rem; /* Ajuste de tamaño */
+    }
+}
+

@@ -1,0 +1,29 @@
+/* Contenedor */
+.typewriter {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2rem;
+  }
+  
+  /* Texto animado */
+  .text {
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  /* Cursor corregido */
+  .cursor {
+    font-weight: bold;
+    font-size: 2rem; /* Asegura que tenga el mismo tamaño del texto */
+    margin-left: 5px;
+    animation: blinkCursor 0.6s step-end infinite;
+  }
+  
+  /* Animación de parpadeo */
+  @keyframes blinkCursor {
+    50% { opacity: 0; } /* Cambio a opacity en lugar de visibility */
+  }
+  
